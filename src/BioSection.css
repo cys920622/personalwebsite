@@ -1,0 +1,14 @@
+.bio-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.head-shot {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 999px;
+}
+
+.bio-paragraph {
+    text-align: left;
+}

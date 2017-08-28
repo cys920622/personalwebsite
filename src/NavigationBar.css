@@ -1,0 +1,25 @@
+.navigation-bar {
+    width: inherit;
+}
+
+.nav-bar-button-group-left {
+    padding: 15px 32px;
+    float: left;
+}
+
+.nav-bar-button-group-right {
+    float: right;
+}
+
+.nav-bar-button {
+    background-color: aquamarine;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.nav-bar-button:hover {
+    background-color: aqua;
+}
