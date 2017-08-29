@@ -1,11 +1,16 @@
 .bio-section {
     display: flex;
     flex-direction: row;
+    box-shadow: 1px 1px 5px #888888;
+    padding: 15px;
 }
 
+.bio-right-section {
+    margin-left: 50px;
+}
 .head-shot {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 250px;
+    max-height: 250px;
     border-radius: 999px;
 }
 
