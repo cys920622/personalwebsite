@@ -1,7 +1,13 @@
 {
-  "main.css": "static/css/main.57cab4ed.css",
-  "main.css.map": "static/css/main.57cab4ed.css.map",
-  "main.js": "static/js/main.69c0fbda.js",
-  "main.js.map": "static/js/main.69c0fbda.js.map",
-  "static/media/headshot.png": "static/media/headshot.864e230a.png"
+  "main.css": "static/css/main.364c0f72.css",
+  "main.css.map": "static/css/main.364c0f72.css.map",
+  "main.js": "static/js/main.efcdc71d.js",
+  "main.js.map": "static/js/main.efcdc71d.js.map",
+  "static/media/collab-a-comic.jpg": "static/media/collab-a-comic.f4c49629.jpg",
+  "static/media/email.png": "static/media/email.7bffa1b3.png",
+  "static/media/github.svg": "static/media/github.71edeaef.svg",
+  "static/media/headshot.png": "static/media/headshot.864e230a.png",
+  "static/media/kikisdeliveryservice.png": "static/media/kikisdeliveryservice.40617e49.png",
+  "static/media/study-buddy.png": "static/media/study-buddy.d71e90c9.png",
+  "static/media/sudoku-vision.gif": "static/media/sudoku-vision.52664e8d.gif"
 }
