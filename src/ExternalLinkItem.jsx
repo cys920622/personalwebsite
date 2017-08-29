@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './ExternalLinkItem.css';
 
 export default class ExternalLinkItem extends Component {
   render() {
@@ -7,9 +8,8 @@ export default class ExternalLinkItem extends Component {
       <div className="external-link-item">
         <a
           className="external-link-item-title"
-          href={this.props.externalUrl}
-        >
-          {this.props.itemName}
+          href={this.props.externalUrl}>
+          <img src={this.props.imageUrl} alt={this.props.itemName}/>
         </a>
       </div>
     );

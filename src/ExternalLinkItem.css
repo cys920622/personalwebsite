@@ -1,0 +1,8 @@
+.external-link-item {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.external-link-item img {
+    height: 40px;
+}

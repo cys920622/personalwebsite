@@ -12,21 +12,12 @@ export default class ProjectItem extends Component {
       <div className="project-item"
            style={backgroundStyle}>
         <div className="project-text">
-          <div className="project-title">{this.props.projectName}</div>
-          <div className="project-description">
-            <a href={this.props.url}>{this.props.description}</a>
+          <div className="project-title">
+            <a href={this.props.url}>{this.props.projectName}</a>
           </div>
         </div>
       </div>
     );
-  }
-
-  getProjectImage() {
-    if (this.props.imageUrl) {
-      return (<img src={this.props.imageUrl} alt="project"/>);
-    } else {
-      return (<img alt="default-project"/>);
-    }
   }
 }
 

@@ -5,6 +5,7 @@ import './ProjectsSection.css';
 import SudokuPhoto from './images/sudoku-vision.gif'
 import CollabAComicPhoto from './images/collab-a-comic.jpg';
 import StudyBuddyPhoto from './images/study-buddy.png';
+import KikiPhoto from './images/kikisdeliveryservice.png';
 
 export default class ProjectsSection extends Component {
   render() {
@@ -23,6 +24,7 @@ export default class ProjectsSection extends Component {
               projectName="Kiki’s Delivery Service"
               description="Lorem ipsum dolor sit amet, et mazim possim electram his, mei in dolorum meliore."
               url="https://github.com/cys920622/kikisdeliveryservice"
+              imageUrl={KikiPhoto}
             />
             <ProjectItem
               projectName="Collab-A-Comic!"
