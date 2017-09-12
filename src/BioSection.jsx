@@ -10,10 +10,42 @@ import EmailIcon from './images/email.png';
 import ResumeIcon from './images/resume-icon.svg';
 import Background from './images/bio_section_background.jpg';
 
-const backgroundStyle ={
+const backgroundStyle = {
   backgroundImage: "url("+ Background +")",
   backgroundSize: "cover"
 };
+
+const externalLinkItems = [
+  {
+    itemName: "GitHub",
+    externalUrl: "https://github.com/cys920622",
+    imageUrl: GithubIcon
+  },
+  {
+    itemName: "LinkedIn",
+    externalUrl: "https://www.linkedin.com/in/danielychoi",
+    imageUrl: LinkedInIcon
+  },
+  {
+    itemName: "Email",
+    externalUrl: "mailTo:daniel.choi@alumni.ubc.ca",
+    imageUrl: EmailIcon
+  },
+  {
+    itemName: "Resume",
+    externalUrl: "https://github.com/cys920622/latex-resume/raw/master/Daniel-Choi-Resume.pdf",
+    imageUrl: ResumeIcon
+  },
+];
+
+const typedMessageStrings = [
+  'I\'m a software developer.',
+  'I build web applications.',
+  'I build back-ends in Scala.',
+  'I build front-ends in React.',
+  'I build front-ends in Angular2.',
+  'I teach computer science.'
+];
 
 export default class BioSection extends Component {
   render() {
@@ -37,46 +69,24 @@ export default class BioSection extends Component {
     );
   }
 
-  //TODO: write some actual messages here
   renderTypedMessage() {
     return (
       <TypedMessage
-        strings={[
-          'I\'m a software developer.',
-          'I build web applications.',
-          'I build back-ends in Scala.',
-          'I build front-ends in React.',
-          'I build front-ends in Angular2.'
-        ]}
+        strings={typedMessageStrings}
       />
     );
   }
 
   renderExternalLinkItems() {
-    return (
-      <div className="external-link-items">
+    return externalLinkItems.map((item) => {
+      return (
         <ExternalLinkItem
-          itemName="GitHub"
-          externalUrl="https://github.com/cys920622"
-          imageUrl={GithubIcon}
+          itemName={item.itemName}
+          externalUrl={item.externalUrl}
+          imageUrl={item.imageUrl}
         />
-        <ExternalLinkItem
-          itemName="LinkedIn"
-          externalUrl="https://www.linkedin.com/in/danielychoi"
-          imageUrl={LinkedInIcon}
-        />
-        <ExternalLinkItem
-          itemName="Email"
-          externalUrl="mailTo:daniel.choi@alumni.ubc.ca"
-          imageUrl={EmailIcon}
-        />
-        <ExternalLinkItem
-          itemName="Resume"
-          externalUrl="https://github.com/cys920622/latex-resume/raw/master/Daniel-Choi-Resume.pdf"
-          imageUrl={ResumeIcon}
-        />
-      </div>
-    );
+      )
+    });
   }
 
   renderLearnMore() {
