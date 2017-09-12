@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './BioSection.css';
 import ExternalLinkItem from './ExternalLinkItem';
 import MessageBubble from './MessageBubble';
+import TypedMessage from './TypedMessage';
 
 import HeadshotPhoto from './images/headshot.png';
 import GithubIcon from './images/github.svg';
@@ -14,6 +15,13 @@ export default class BioSection extends Component {
       <div className="bio-section">
         <img className="head-shot" src={HeadshotPhoto} alt="Bio headshot" />
         <div className="bio-right-section">
+          <TypedMessage
+            strings={[
+              'Some <i>strings</i> are slanted',
+              'Some <strong>strings</strong> are bold',
+              'HTML characters &times; &copy;'
+            ]}
+          />
           <MessageBubble message="Hi, nice to meet you!"/>
           <div className="bio-paragraph">
             <h2>I'm Daniel Choi</h2>
