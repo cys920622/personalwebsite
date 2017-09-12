@@ -12,6 +12,7 @@ export default class TypedMessage extends Component {
     const options = {
       loop: true,
       strings: strings,
+      cursorChar: '_',
       typeSpeed: 50,
       backDelay: 1000,
       backSpeed: 30

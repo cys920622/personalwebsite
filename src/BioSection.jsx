@@ -7,6 +7,7 @@ import HeadshotPhoto from './images/headshot.png';
 import GithubIcon from './images/github.svg';
 import LinkedInIcon from './images/linkedin-in.svg';
 import EmailIcon from './images/email.png';
+import ResumeIcon from './images/resume-icon.svg';
 import Background from './images/bio_section_background.jpg';
 
 const backgroundStyle ={
@@ -18,17 +19,20 @@ export default class BioSection extends Component {
   render() {
     return (
       <div className="bio-section" style={backgroundStyle}>
-        <div className="bio-left-section">
-          <img className="head-shot" src={HeadshotPhoto} alt="Bio headshot" />
-        </div>
-        <div className="bio-right-section">
-          <div className="bio-paragraph">
-            <span>Hi! I'm Daniel, and I am</span>
-            {this.renderTypedMessage()}
-            <hr/>
+        <div className="bio-conent">
+          <div className="bio-content-left">
+            <img className="head-shot" src={HeadshotPhoto} alt="Bio headshot" />
           </div>
-          {this.renderExternalLinkItems()}
+          <div className="bio-content-right">
+            <div className="bio-paragraph">
+              <span>Hi! I'm Daniel.</span>
+              {this.renderTypedMessage()}
+              <hr/>
+            </div>
+            {this.renderExternalLinkItems()}
+          </div>
         </div>
+        {this.renderLearnMore()}
       </div>
     );
   }
@@ -38,9 +42,11 @@ export default class BioSection extends Component {
     return (
       <TypedMessage
         strings={[
-          'a junior web developer',
-          'a backend',
-          'a frontend'
+          'I\'m a software developer.',
+          'I build web applications.',
+          'I build back-ends in Scala.',
+          'I build front-ends in React.',
+          'I build front-ends in Angular2.'
         ]}
       />
     );
@@ -67,7 +73,18 @@ export default class BioSection extends Component {
         <ExternalLinkItem
           itemName="Resume"
           externalUrl="https://github.com/cys920622/latex-resume/raw/master/Daniel-Choi-Resume.pdf"
+          imageUrl={ResumeIcon}
         />
+      </div>
+    );
+  }
+
+  renderLearnMore() {
+    return (
+      <div className="learn-more">
+        Learn more about me
+        <br/>
+        <i className="arrow down"></i>
       </div>
     );
   }

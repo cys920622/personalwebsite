@@ -3,14 +3,15 @@
     width: 100vw;
     vertical-align: middle;
     display: table-cell;
+    color: white;
 }
-.bio-left-section {
+.bio-content-left {
     display: inline-block;
 }
-.bio-right-section {
+.bio-content-right {
     display: inline-block;
     margin-left: 50px;
-    width: 600px;
+    width: 700px;
 }
 .head-shot {
     max-width: 250px;
@@ -22,7 +23,6 @@
     font-size: 50px;
     font-weight: 800;
     text-align: left;
-    color: white;
     text-shadow: black 0 2px 4px;
 
     /* Transition for blinking cursor */
@@ -33,6 +33,20 @@
     transition: all 0.7s ease-in-out;
 }
 
-.external-link-items {
+.learn-more {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%);
+}
 
+i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }

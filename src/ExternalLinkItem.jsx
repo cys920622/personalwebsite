@@ -5,7 +5,7 @@ import './ExternalLinkItem.css';
 export default class ExternalLinkItem extends Component {
   render() {
     return (
-      <div className="external-link-item">
+      <div className="external-link-item" title={this.props.itemName}>
         <a
           className="external-link-item-title"
           href={this.props.externalUrl}>
