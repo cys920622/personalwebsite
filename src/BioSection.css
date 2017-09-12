@@ -1,8 +1,6 @@
 .bio-section {
-    display: flex;
-    flex-direction: row;
-    box-shadow: 1px 1px 5px #888888;
-    padding: 15px;
+    background-color: #efefef;
+    height: 100vh;
 }
 
 .bio-right-section {
