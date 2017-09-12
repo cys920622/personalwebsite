@@ -1,10 +1,16 @@
 .bio-section {
-    background-color: #efefef;
     height: 100vh;
+    width: 100vw;
+    vertical-align: middle;
+    display: table-cell;
 }
-
+.bio-left-section {
+    display: inline-block;
+}
 .bio-right-section {
+    display: inline-block;
     margin-left: 50px;
+    width: 600px;
 }
 .head-shot {
     max-width: 250px;
@@ -13,7 +19,18 @@
 }
 
 .bio-paragraph {
+    font-size: 50px;
+    font-weight: 800;
     text-align: left;
+    color: white;
+    text-shadow: black 0 2px 4px;
+
+    /* Transition for blinking cursor */
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
 
 .external-link-items {

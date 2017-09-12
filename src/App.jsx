@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import NavigationBar from './NavigationBar';
 import BioSection from './BioSection';
 import ProjectsSection from './ProjectsSection';
 import SkillsSection from './SkillsSection';
