@@ -14,7 +14,7 @@ export default class TypedMessage extends Component {
       strings: strings,
       cursorChar: '_',
       typeSpeed: 50,
-      backDelay: 1000,
+      backDelay: 1200,
       backSpeed: 30
     };
     // this.el refers to the <span> in the render() method

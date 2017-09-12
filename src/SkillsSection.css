@@ -1,0 +1,23 @@
+.skills-section {
+    margin: 100px 0;
+}
+
+.skill-area {
+    vertical-align: top;
+    width: 300px;
+    display: inline-block;
+}
+
+.skill-bubble {
+    display: inline-block;
+    background-color: #eee;
+    margin: 2px 3px;
+    padding: 5px;
+    -webkit-border-radius:999px;
+    -moz-border-radius:999px;
+    border-radius:999px;
+    transition: all 0.2s ease-in-out;
+}
+.skill-bubble:hover {
+    background-color: #d3d3d3;
+}

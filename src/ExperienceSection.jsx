@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import ExperienceItem from './ExperienceItem';
+import './ExperienceSection.css';
+
 
 export default class ExperienceSection extends Component {
   render() {

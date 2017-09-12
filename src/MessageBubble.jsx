@@ -7,7 +7,7 @@ export default class MessageBubble extends Component {
     return (
       <div className="message-bubble">
         <div className="clear"></div>
-        <div className="from-them">
+        <div className={"from-" + this.props.from}>
           <p className="message-text">{this.props.message}</p>
         </div>
         <div className="clear"></div>
@@ -17,5 +17,9 @@ export default class MessageBubble extends Component {
 }
 
 MessageBubble.propTypes = {
-  message: PropTypes.string
+  message: PropTypes.string,
+  /**
+   * Styles the message bubble differently. Must be one of 'me' or 'them'.
+   */
+  from: PropTypes.string
 };

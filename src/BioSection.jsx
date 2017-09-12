@@ -94,7 +94,7 @@ export default class BioSection extends Component {
       <div className="learn-more">
         Learn more about me
         <br/>
-        <i className="arrow down"></i>
+        <i className="arrow down" />
       </div>
     );
   }
