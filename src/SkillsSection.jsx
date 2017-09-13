@@ -31,7 +31,7 @@ export default class SkillsSection extends Component {
     return (
       <div className="skills-section">
         <h1>My Skills</h1>
-        <h3>I can do a whole bunch of things!</h3>
+        <h3>I have skills in all sorts of areas!</h3>
         <div className="skills">{this.renderSkillArea()}</div>
       </div>
     );
