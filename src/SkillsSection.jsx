@@ -41,12 +41,13 @@ export default class SkillsSection extends Component {
     return skillSet.map((item) => {
       let skillBubbles = item.skills.map((skill) => {
         return (
-          <a className="skill-bubble">{skill}</a>
+          <a className="skill-bubble" key={skill}>{skill}</a>
         )
       });
       return (
-      <div className="skill-area">
+      <div className="skill-area" key={item.skillArea}>
         <img
+          key={item.skillArea}
           className="skill-icon"
           src={item.icon}
           alt={item.skillArea}/>

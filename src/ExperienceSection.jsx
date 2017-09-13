@@ -11,32 +11,30 @@ import VisierLogo from './images/visier-logo.png';
 const recommendations = [
   {
     name: "Mike White",
+    linkedInUrl: "https://www.linkedin.com/in/mike-white-b140182/",
     position: "Manager, Software Development at Hootsuite",
-    body: "I had the pleasure of managing Dan and the team he was embedded in " +
-    "during his 4 month co-op term at Hootsuite. From the very first day Dan " +
-    "showed an impressive amount of initiative and grit and this continued " +
-    "throughout his stay. He continued to take on larger and larger tasks with " +
-    "decreasing amounts of supervision and was able to speak to strategy, " +
-    "technology, risks, estimation, and changes throughout the product lifecycle. " +
-    "He did not hesitate to ask questions and pull knowledge from within our team " +
-    "and form new relationships outside of our team to fill gaps. Dan fit in well " +
-    "with the collaborative, friendly, work-out-loud culture here and I would not " +
-    "hesitate to hire him again."
+    fullBody: "",
+    body: [
+      "From the very first day Dan showed an impressive amount of initiative and grit and this continued throughout his stay. He continued to take on larger and larger tasks with decreasing amounts of supervision and was able to speak to strategy, technology, risks, estimation, and changes throughout the product lifecycle.",
+      "Dan fit in well with the collaborative, friendly, work-out-loud culture here and I would not hesitate to hire him again."
+    ]
   },
   {
     name: "Steve Song",
+    linkedInUrl: "https://www.linkedin.com/in/songsteve/",
     position: "Senior Software Developer at Hootsuite",
-    body: "Hootsuite throws co-ops in deep end of the pool that some find challenging. " +
-    "Daniel performed very well and delivered results despite what he faced. He took " +
-    "complete ownership of each story he worked on which showed maturity and responsibility. " +
-    "His ability to understand requirements, write code and automated tests is " +
-    "exceptional at his level. I can't wait to see what he can do as he gains more " +
-    "industry experience."
+    fullBody: "",
+    body: ["His ability to understand requirements, write code and automated tests is exceptional at his level. I can't wait to see what he can do as he gains more industry experience."]
   },
   {
     name: "Sam Reh",
+    linkedInUrl: "https://www.linkedin.com/in/samreh/",
     position: "Software Developer at Hootsuite",
-    body: "Dan’s first day at Hootsuite set the tone for his entire co-op. It was the start of an internal hackathon, and rather than joining an existing team, he decided to jump up on stage and pitched an idea of his own, in front of the entire development organization. As members of the platform infrastructure team, our team is involved in a variety of projects with varying technical stacks. Dan was able to ramp up very quickly on each project, even in technologies he had no experience. When necessary, Dan did not hesitate to reach out to team members for help, as well as other teams throughout the company. Dan took ownership over all parts of the product lifecycle, from story creation, to demoing at the all hands meeting in front of entire Prod & Dev group, as well as tracking uptake and performance metrics after a project. On Dan’s last day at Hootsuite, several people in the department were surprised; they thought he was a full employee the entire time."
+    fullBody: "",
+    body: [
+      "Dan was able to ramp up very quickly on each project, even in technologies he had no experience.",
+      "On Dan’s last day at Hootsuite, several people in the department were surprised; they thought he was a full employee the entire time."
+    ]
   }
 ];
 
@@ -74,7 +72,9 @@ export default class ExperienceSection extends Component {
     return recommendations.map((item) => {
       return (
         <RecommendationItem
+          key={item.name}
           name={item.name}
+          linkedInUrl={item.linkedInUrl}
           position={item.position}
           body={item.body}
         />
