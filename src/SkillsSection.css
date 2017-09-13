@@ -21,3 +21,7 @@
 .skill-bubble:hover {
     background-color: #d3d3d3;
 }
+
+.skill-icon {
+    height: 200px;
+}
