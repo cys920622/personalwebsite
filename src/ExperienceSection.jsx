@@ -9,6 +9,13 @@ import VisierLogo from './images/visier-logo.png';
 
 const recommendations = [
   {
+    name: "Steve Song",
+    linkedInUrl: "https://www.linkedin.com/in/songsteve/",
+    position: "Senior Software Developer at Hootsuite",
+    fullBody: "",
+    body: ["His ability to understand requirements, write code and automated tests is exceptional at his level. I can't wait to see what he can do as he gains more industry experience."]
+  },
+  {
     name: "Mike White",
     linkedInUrl: "https://www.linkedin.com/in/mike-white-b140182/",
     position: "Manager, Software Development at Hootsuite",
@@ -17,13 +24,6 @@ const recommendations = [
       "From the very first day Dan showed an impressive amount of initiative and grit and this continued throughout his stay. He continued to take on larger and larger tasks with decreasing amounts of supervision and was able to speak to strategy, technology, risks, estimation, and changes throughout the product lifecycle.",
       "Dan fit in well with the collaborative, friendly, work-out-loud culture here and I would not hesitate to hire him again."
     ]
-  },
-  {
-    name: "Steve Song",
-    linkedInUrl: "https://www.linkedin.com/in/songsteve/",
-    position: "Senior Software Developer at Hootsuite",
-    fullBody: "",
-    body: ["His ability to understand requirements, write code and automated tests is exceptional at his level. I can't wait to see what he can do as he gains more industry experience."]
   },
   {
     name: "Sam Reh",

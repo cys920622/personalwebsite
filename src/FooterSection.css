@@ -5,8 +5,13 @@
 
 .author {
     font-size: 11px;
-    height: 20px;
     display: inline-block;
     vertical-align: middle;
     padding: 50px 0 20px;
+}
+
+.source-link {
+    text-decoration: none;
+    border-bottom: 1px dotted #ffa500;
+    color: #FFA500;
 }
