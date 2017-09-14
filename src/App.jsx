@@ -4,6 +4,7 @@ import BioSection from './BioSection';
 import ProjectsSection from './ProjectsSection';
 import SkillsSection from './SkillsSection';
 import ExperienceSection from './ExperienceSection';
+import FooterSection from './FooterSection';
 
 class App extends Component {
   render() {
@@ -13,9 +14,11 @@ class App extends Component {
         <SkillsSection />
         <ExperienceSection />
         <ProjectsSection />
+        <FooterSection />
       </div>
     );
   }
+  //TODO - add tutoring section
 }
 
 export default App;

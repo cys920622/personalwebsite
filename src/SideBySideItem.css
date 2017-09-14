@@ -1,0 +1,30 @@
+.sbs-item {
+    margin: 35px 0;
+}
+.sbs-image {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: white;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: 2px 2px 8px #888888;
+}
+.sbs-text {
+    display: inline-block;
+    direction: initial;
+    vertical-align: middle;
+    width: 35%;
+    margin: 25px;
+}
+.sbs-description {
+    text-align: initial;
+}
+.sbs-image img {
+    width: 400px;
+}
+
+.experience-hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 50%;
+}

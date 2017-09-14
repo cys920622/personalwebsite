@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import TagBubble from './TagBubble';
+
 // These two images are from https://www.galvanize.com/boulder/web-development.
 import IconBackend from './images/icon-backend.png';
 import IconFrontend from './images/icon-frontend.png';
@@ -40,9 +42,7 @@ export default class SkillsSection extends Component {
   renderSkillArea() {
     return skillSet.map((item) => {
       let skillBubbles = item.skills.map((skill) => {
-        return (
-          <a className="skill-bubble" key={skill}>{skill}</a>
-        )
+        return <TagBubble key={skill} itemName={skill} />;
       });
       return (
       <div className="skill-area" key={item.skillArea}>

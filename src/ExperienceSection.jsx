@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ExperienceItem from './ExperienceItem';
+import SideBySideItem from './SideBySideItem';
 import RecommendationItem from './RecommendationItem';
 
 import './ExperienceSection.css';
@@ -7,7 +7,6 @@ import './ExperienceSection.css';
 import HootsuiteLogo from './images/hootsuite-logo.png';
 import VisierLogo from './images/visier-logo.png';
 
-//TODO: need to shorten recommendations
 const recommendations = [
   {
     name: "Mike White",
@@ -44,10 +43,10 @@ export default class ExperienceSection extends Component {
       <div className="experience-section">
         <h1>Technical Experience</h1>
         <div>
-          <ExperienceItem
+          <SideBySideItem
             itemName="Hootsuite"
-            position="Software developer co-op (May - Aug 2017)"
-            description=""
+            subheader="Software developer co-op (May - Aug 2017)"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             itemUrl="https://hootsuite.com/"
             imageUrl={HootsuiteLogo}
             isLayoutReversed={false}
@@ -55,10 +54,10 @@ export default class ExperienceSection extends Component {
           <hr className="experience-hr"/>
           <div>{this.renderRecommendations()}</div>
           <hr className="experience-hr"/>
-          <ExperienceItem
+          <SideBySideItem
             itemName="Visier"
-            position="Software developer co-op (May - Dec 2016)"
-            description=""
+            subheader="Software developer co-op (May - Dec 2016)"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             itemUrl="https://www.visier.com/"
             imageUrl={VisierLogo}
             isLayoutReversed={true}
@@ -71,13 +70,7 @@ export default class ExperienceSection extends Component {
   renderRecommendations() {
     return recommendations.map((item) => {
       return (
-        <RecommendationItem
-          key={item.name}
-          name={item.name}
-          linkedInUrl={item.linkedInUrl}
-          position={item.position}
-          body={item.body}
-        />
+        <RecommendationItem key={item.name} {...item} />
       );
     });
   }

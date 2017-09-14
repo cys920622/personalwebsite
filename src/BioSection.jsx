@@ -80,12 +80,7 @@ export default class BioSection extends Component {
   renderExternalLinkItems() {
     return externalLinkItems.map((item) => {
       return (
-        <ExternalLinkItem
-          key={item.itemName}
-          itemName={item.itemName}
-          externalUrl={item.externalUrl}
-          imageUrl={item.imageUrl}
-        />
+        <ExternalLinkItem key={item.itemName} {...item} />
       )
     });
   }

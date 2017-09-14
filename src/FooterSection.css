@@ -1,0 +1,12 @@
+.footer-section {
+    background-color: #383838;
+    color: white;
+}
+
+.author {
+    font-size: 11px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 50px 0 20px;
+}
