@@ -65,7 +65,7 @@ export default class ExperienceSection extends Component {
             imageUrl={HootsuiteLogo}
             isLayoutReversed={false}
           />
-          <hr className="hr-divider"/>
+            <hr className="hr-divider"/>
           <div>
             {this.renderSingleRecommendation(1)}
             {this.renderSingleRecommendation(0)}

@@ -13,7 +13,7 @@
     display: inline-block;
     direction: initial;
     vertical-align: middle;
-    width: 35%;
+    width: 35vw;
     margin: 25px;
 }
 .sbs-description {
@@ -23,5 +23,15 @@
     text-align: initial;
 }
 .sbs-image img {
-    width: 400px;
+    width: 30vw;
+}
+
+@media only screen and (max-width: 500px) {
+    .sbs-image img {
+        width: 80vw;
+    }
+    .sbs-text {
+        width: 90vw;
+        margin: 5px;
+    }
 }

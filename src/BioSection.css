@@ -10,8 +10,8 @@
 }
 .bio-content-right {
     display: inline-block;
-    margin-left: 50px;
-    width: 700px;
+    margin-left: 4vw;
+    width: 52vw;
 }
 .head-shot {
     max-width: 250px;
@@ -49,4 +49,20 @@ i {
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 500px) {
+    .head-shot {
+        max-width: 70vw;
+        max-height: 70vw;
+    }
+
+    .bio-content-right {
+        width: 75vw;
+        margin-left: 0;
+        margin-top: 5vh;
+    }
+    .bio-paragraph {
+        font-size: 20px;
+    }
 }

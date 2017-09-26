@@ -1,17 +1,20 @@
 .skills-section {
-    padding: 100px 0;
-}
-
-.skills {
-    margin-top: 50px;
+    margin: 10vh 0;
 }
 
 .skill-area {
+    margin-top: 7vh;
     vertical-align: top;
-    width: 300px;
+    width: 25vw;
     display: inline-block;
 }
 
 .skill-icon {
     height: 200px;
+}
+
+@media only screen and (max-width: 500px) {
+    .skill-area {
+        width: 90vw;
+    }
 }
