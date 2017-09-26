@@ -26,7 +26,7 @@
     width: 30vw;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 750px) {
     .sbs-image img {
         width: 80vw;
     }

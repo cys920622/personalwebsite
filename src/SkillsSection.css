@@ -13,7 +13,7 @@
     height: 200px;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 750px) {
     .skill-area {
         width: 90vw;
     }
