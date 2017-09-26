@@ -17,6 +17,7 @@ export default class SideBySideItem extends Component {
           {this.renderTags()}
           <h4 className="sbs-subheader">{this.props.subheader}</h4>
           <div className="sbs-description">{this.props.description}</div>
+          <ul className="sbs-point-form-description">{this.renderPointFormDescription()}</ul>
         </div>
       </div>
     );
@@ -35,6 +36,16 @@ export default class SideBySideItem extends Component {
       });
     }
   }
+
+  renderPointFormDescription() {
+    if (this.props.pointFormDescription) {
+      return this.props.pointFormDescription.map((point) => {
+        return (
+          <li key={point}>{point}</li>
+        );
+      });
+    }
+  }
 }
 
 SideBySideItem.propTypes = {
@@ -42,6 +53,7 @@ SideBySideItem.propTypes = {
   tags: PropTypes.array,
   subheader: PropTypes.string,
   description: PropTypes.string,
+  pointFormDescription: PropTypes.array,
   imageUrl: PropTypes.string,
   itemUrl: PropTypes.string,
   isLayoutReversed: PropTypes.bool

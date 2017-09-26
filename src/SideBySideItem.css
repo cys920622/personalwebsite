@@ -19,12 +19,9 @@
 .sbs-description {
     text-align: initial;
 }
+.sbs-point-form-description {
+    text-align: initial;
+}
 .sbs-image img {
     width: 400px;
-}
-
-.experience-hr {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 50%;
 }

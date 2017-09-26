@@ -18,7 +18,7 @@ const skillSet = [
   },
   {
     skillArea: "Back-end",
-    skills: ["Scala", "Java", "Node.js"],
+    skills: ["Scala", "Java", "Node.js", "Microservice architecture"],
     icon: IconBackend
   },
   {

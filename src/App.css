@@ -23,3 +23,9 @@ html[xmlns] .clearfix {
 * html .clearfix {
     height: 1%;
 }
+
+.hr-divider {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 50%;
+}
