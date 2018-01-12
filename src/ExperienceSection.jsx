@@ -4,6 +4,7 @@ import RecommendationItem from './RecommendationItem';
 
 import './ExperienceSection.css';
 
+import MSLogo from './images/ms-logo.png';
 import HootsuiteLogo from './images/hootsuite-logo.png';
 import VisierLogo from './images/visier-logo.png';
 
@@ -53,6 +54,15 @@ export default class ExperienceSection extends Component {
         <h1>Technical Experience</h1>
         <div>
           <SideBySideItem
+            itemName="Microsoft"
+            subheader="Software Engineer (starting Aug 2018)"
+            pointFormDescription={[]}
+            itemUrl="https://www.microsoft.com/"
+            imageUrl={MSLogo}
+            isLayoutReversed={false}
+          />
+          <hr className="hr-divider"/>
+          <SideBySideItem
             itemName="Hootsuite"
             subheader="Software developer co-op (May - Aug 2017)"
             pointFormDescription={[
@@ -63,7 +73,7 @@ export default class ExperienceSection extends Component {
             ]}
             itemUrl="https://hootsuite.com/"
             imageUrl={HootsuiteLogo}
-            isLayoutReversed={false}
+            isLayoutReversed={true}
           />
             <hr className="hr-divider"/>
           <div>
@@ -81,7 +91,7 @@ export default class ExperienceSection extends Component {
             ]}
             itemUrl="https://www.visier.com/"
             imageUrl={VisierLogo}
-            isLayoutReversed={true}
+            isLayoutReversed={false}
           />
           <hr className="hr-divider"/>
           <div>

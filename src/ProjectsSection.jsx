@@ -55,8 +55,8 @@ export default class ProjectsSection extends Component {
   renderProjectItems() {
     return projects.map((project) => {
       return (
-        <div>
-          <SideBySideItem key={project.itemName} {...project} />
+        <div key={project.itemName}>
+          <SideBySideItem {...project} />
           <hr className="hr-divider"/>
         </div>
       )
