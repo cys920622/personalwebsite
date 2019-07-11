@@ -4,11 +4,11 @@
   "private": true,
   "dependencies": {
     "classnames": "^2.2.5",
-    "gh-pages": "^1.0.0",
+    "gh-pages": "^2.0.1",
     "lodash": "^4.17.14",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "^1.1.4",
+    "react-scripts": "^3.0.1",
     "typed.js": "^2.0.5"
   },
   "scripts": {
